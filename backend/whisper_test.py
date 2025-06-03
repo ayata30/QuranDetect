@@ -11,3 +11,4 @@ with open("output.txt", "w", encoding="utf-8") as f:
 print("Transcription complete. Saved to output.txt")
 print("Transcript preview:", transcribed_text[:100])
 
+#whisper transcription logic

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Detect</title>
+</head>
+<body>
+   <h1> Quran Audio Detector</h1>
+   <form action="/upload" method="POST" enctype="multipart/form-data">
+   <input type="file" name="audio" required />
+   <button type="submit"> Upload</button>
+
+
+
+    {% if transcription %}
+    <h3>Transcription:</h3>
+    <p>{{ transcription }}</p>
+    {% endif %}
+
+    {% if surah %}
+    <h3>Surah:</h3>
+    <p>{{ surah }}</p>
+
+ {%endif %}
+
+
+   </form>
+</body>
+</html>
